@@ -29,6 +29,8 @@
     <!-- css -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
@@ -167,6 +169,55 @@
     <!-- / header -->
 
     <!-- content -->
+    <!-- images carousel -->
+    <div id="clients" class="primary-background">
+        <div class="container">
+            <div id="clients-carousel" class="owl-carousel">
+                <div class="item">
+                    <div class="item-text">Giường ngủ</div>
+                    <img src="images/giuong-ngu.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="item-text">Tủ quần áo</div>
+                    <img src="images/tu-quan-ao.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="item-text">Ghế Sofa</div>
+                    <img src="images/ghe-sofa.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="item-text">Bàn ghế gỗ</div>
+                    <img src="images/ban-ghe-go.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="item-text">Tủ bếp</div>
+                    <img src="images/tu-bep.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="item-text">Phòng khách</div>
+                    <img src="images/phong-khach.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="item-text">Bộ bàn ăn</div>
+                    <img src="images/nha-bep.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="item-text">Trẻ em</div>
+                    <img src="images/tre-em.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="item-text">Văn phòng</div>
+                    <img src="images/van-phong.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="item-text">Phòng ngủ</div>
+                    <img src="images/phong-ngu.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- / container -->
+    </div>
+    <!-- / images carousel -->
     <section id="shopMap">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.078149397262!2d106.00260881429303!3d20.130787023201698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31366fb9fb72794d%3A0x6fbaea2fb0fa97c4!2zWMaw4bufbmcgbeG7mWMgTmd1eeG7hW4gVsSDbiBUaMaw4bufbmc!5e0!3m2!1svi!2s!4v1511924193111"
             width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -208,6 +259,22 @@
             }, 'slow');
         });
     </script>
+    <!-- sliders -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- clients carousel -->
+    <script>
+        $(document).ready(function () {
+            $("#clients-carousel").owlCarousel({
+                autoPlay: 5000, //set autoPlay to 5 seconds.
+                items: 6,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 3]
+            });
+
+        });
+    </script>
+    <!-- / clients carousel -->
+    <!-- / sliders -->
     <!-- / javascript -->
 </body>
 
